@@ -2,18 +2,13 @@ from os import close
 from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
-import preto
+import BeW
 import sys
 class Root(Tk):
     def __init__(self):
         super(Root, self).__init__()
         self.title("Test")
-        self.minsize(640,40)
-        #self.wm_iconbitmap('icon.ico')
-      
-
-
-
+        self.minsize(800,600)
         self.labelFrame = ttk.LabelFrame(self,text = "abrir")
         self.labelFrame.grid(column = 0,row = 1,pady = 20)
 
@@ -30,7 +25,7 @@ class Root(Tk):
         root.quit()
 
     def showimage(self):
-        preto.teste(caminho)   
+        BeW.teste(caminho)   
         
 
 if __name__=='__main__':
